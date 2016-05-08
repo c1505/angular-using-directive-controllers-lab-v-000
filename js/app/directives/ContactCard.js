@@ -21,11 +21,8 @@ function ContactCard() {
 		].join(''),
 		restrict: 'E',
 		controller: function($scope) {
-			this.lowerCase = function () {
-				this.username = "string"
-			}
-		},
-		controllerAs: 'ctrl'
+			$scope.username = $scope.username.toLowerCase();
+		}
 	};
 }
 
